@@ -6,6 +6,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from openai import OpenAI
+from dotenv import load_dotenv
+load_dotenv(override=True)
 
 app = FastAPI(title="Football Chat API", version="1.0.0")
 
